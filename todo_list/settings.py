@@ -37,6 +37,8 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    "base.apps.BaseConfig"
+    # Conection between base and todo_list
 ]
 
 MIDDLEWARE = [
