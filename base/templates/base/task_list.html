@@ -1,1 +1,20 @@
 <h1>My To Do List</h1>
+
+<table>
+  <!-- Crea una fila para la tabla con un encabezado "Item" -->
+  <tr>
+    <th>Item</th>
+  </tr>
+  <!-- Inicio del bucle "for" para recorrer la lista de tareas -->
+  {% for task in Tasks %}
+  <!-- Crea una fila para cada tarea en la lista -->
+  <tr>
+    <!-- Muestra el título de la tarea en una celda -->
+    <td>{{task.title}}</td>
+  </tr>
+  <!-- Si la lista de tareas está vacía -->
+  {% empty %}
+  <!-- Muestra un mensaje "No items" -->
+  <h3>No items</h3>
+  {% endfor %}
+</table>
