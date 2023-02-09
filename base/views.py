@@ -13,3 +13,4 @@ class TaskList(ListView):
 
 class TaskDetail(DetailView):
        model = Task #Model Name
+       context_object_name = "Tasks_details"
